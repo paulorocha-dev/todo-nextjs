@@ -9,5 +9,5 @@ cd my-todo-app npm install
 3. Execute os testes:
 npm test
 
-4. Execute os testes:
-npm test
+4. Execute o projeto:
+npm run dev
