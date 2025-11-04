@@ -1,7 +1,7 @@
 ## Instrução de Instalação e Execução
 
 1. Clone o repositório:
-git clone https://github.com/paulorocha-dev/my-todo-app.git
+git clone https://github.com/paulorocha-dev/todo-nextjs.git
 
 2. Instale as dependências:
 cd my-todo-app npm install
