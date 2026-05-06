@@ -140,12 +140,18 @@ const BotaoPrioridade = styled.button<{ $prioridade: Prioridade; $ativo: boolean
   font-size: 0.75rem;
   cursor: pointer;
   transition: all 0.2s;
-  border: 1px solid ${({ $prioridade, $ativo }) =>
-    $ativo ? corPrioridade[$prioridade].ativo : corPrioridade[$prioridade].border};
-  background: ${({ $prioridade, $ativo }) =>
-    $ativo ? corPrioridade[$prioridade].ativo : corPrioridade[$prioridade].bg};
-  color: ${({ $ativo }) => ($ativo ? '#fff' : '#374151')};
   font-weight: ${({ $ativo }) => ($ativo ? '600' : '400')};
+  color: ${({ $ativo }) => ($ativo ? '#fff' : '#374151')};
+
+  border: 1px solid ${({ $prioridade, $ativo }) => {
+    const p = $prioridade as Prioridade;
+    return $ativo ? corPrioridade[p].ativo : corPrioridade[p].border;
+  }};
+
+  background: ${({ $prioridade, $ativo }) => {
+    const p = $prioridade as Prioridade;
+    return $ativo ? corPrioridade[p].ativo : corPrioridade[p].bg;
+  }};
 `;
 
 const InputCategoria = styled.input`
