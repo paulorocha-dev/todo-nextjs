@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,10 +18,8 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
-    "types": [
-      "@testing-library/jest-dom"
-    ],
     "paths": {
       "@/components/*": [
         "components/*"

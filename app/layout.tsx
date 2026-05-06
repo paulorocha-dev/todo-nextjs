@@ -1,11 +1,17 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import type { Metadata } from 'next';
+import StyledComponentsRegistry from './registry';
+
+export const metadata: Metadata = {
+  title: 'To-Do List',
+  description: 'Gerenciador de tarefas',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <body style={{ margin: 0, fontFamily: 'system-ui, sans-serif' }}>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
