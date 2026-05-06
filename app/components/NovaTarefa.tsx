@@ -128,7 +128,7 @@ const GrupoPrioridade = styled.div`
   gap: 4px;
 `;
 
-const corPrioridade = {
+const corPrioridade: Record<Prioridade, { bg: string; border: string; ativo: string }> = {
   alta: { bg: '#fee2e2', border: '#fca5a5', ativo: '#ef4444' },
   media: { bg: '#fef9c3', border: '#fde047', ativo: '#eab308' },
   baixa: { bg: '#dcfce7', border: '#86efac', ativo: '#22c55e' },
