@@ -61,7 +61,7 @@ app/
 
 ## 🌐 Deploy
 
-Aplicação disponível em: [https://seu-deploy.vercel.app](https://seu-deploy.vercel.app)
+Aplicação disponível em: [https://todo-nextjs-amber-ten.vercel.app](https://todo-nextjs-amber-ten.vercel.app)
 
 ---
 
